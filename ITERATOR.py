@@ -10,3 +10,10 @@ class SquareIterator:
             result = self.n ** 2
             self.n += 1
             return result
+            else:
+            raise StopIteration
+
+# Usage
+for num in SquareIterator(5):
+    print(num)  # Output: 0, 1, 4, 9, 16, 25
+  
